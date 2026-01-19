@@ -1,0 +1,3 @@
+C:/Users/Brooklyn's Laptop/Documents/College/2026 Spring/CS 1410-Object Oriented Programming/Week2/HW2/out/build/x64-Debug/CMakeFiles/main.dir
+C:/Users/Brooklyn's Laptop/Documents/College/2026 Spring/CS 1410-Object Oriented Programming/Week2/HW2/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Brooklyn's Laptop/Documents/College/2026 Spring/CS 1410-Object Oriented Programming/Week2/HW2/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

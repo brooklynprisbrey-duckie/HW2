@@ -1,32 +1,35 @@
-//TODO: add the appropriate include statements (iostream and string)
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
 
-//TODO: create the main function
-{
-    //TODO: make three variables: itemName (type string), price (type double), and quantity (type int)
+int main (){
+    string itemName = "test";
+    double price = 0.0;
+    int quantity = 0;
+    const double taxRate = 0.07;
 
-    const double TAX_RATE = 0.07;
+    cout << "Enter item name: ";
+    getline(cin, itemName); //allows you to enter spaces, ex: "Cat Yacht"
 
-    std::cout << "Enter item name: ";
-    std::cin >> itemName;
+    cout << "Enter price per item: ";
+    cin >> price;
 
-    //TODO: print the following to the screen: "Enter price per item: "
-    //TODO: have the user enter the price
-
-    //TODO: print the following to the screen: "Enter quantity: "
-    //TODO: have the user enter the quantity
-
-    //TODO: Set values to the subtotal, tax, and total. The subtotal would be the total price before taxes. The tax would be the subtotal multiplied by the tax rate, and 
-    //      the total would be the total plus the tax
+    cout << "Enter quantity: ";
+    cin >> quantity;
+        
+    double subtotal = price * quantity;
+    double tax = subtotal * taxRate;
+    double total = subtotal + tax;
 
     // Output
-    std::cout << "\n----- RECEIPT -----\n";
-    std::cout << "Item: " << itemName << std::endl;
-    std::cout << "Price: $" << price << std::endl;
-    std::cout << "Quantity: " << quantity << std::endl;
-    std::cout << "Subtotal: $" << subtotal << std::endl;
-    std::cout << "Tax (7%): $" << tax << std::endl;
-    std::cout << "Total: $" << total << std::endl;
-    std::cout << "-------------------\n";
-
-//TODO: remember the return 0!
+    cout << "\n----- RECEIPT -----\n";
+    cout << "Item: " << itemName << endl;
+    cout << "Price: $" << price << endl;
+    cout << "Quantity: " << quantity << endl;
+    cout << "Subtotal: $" << subtotal << endl;
+    cout << "Tax (7%): $" << tax << endl;
+    cout << "Total: $" << total << endl;
+    cout << "-------------------\n";
+    return 0;
 }
